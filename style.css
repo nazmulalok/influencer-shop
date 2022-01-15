@@ -215,3 +215,96 @@ footer p{
 .social-icons .social{
     font-size: 25px;
 }
+
+/* Media Queries */
+/* Mobile Devices */
+@media screen and (max-width: 576px) {
+    header{
+        margin-left: 20px;
+    }
+    .flex-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .half-width-text{
+        margin-left: 20px;
+        width: 100%;
+    }
+    .half-width-text .section-title{
+        font-size: 28px;
+    }
+    .half-width{
+        width: 100%;
+    }
+    .half-width img{
+        width: 250px;
+        height: 250px;
+        margin-left: 20px;
+    }
+    .shop-container, .categories-section{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .products{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 30px;
+        grid-column-gap: 30px;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    .section-button a{
+        position: relative;
+        left: 100px;
+    }
+    .categories{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        margin-left: 50px;
+    }
+    .categories-title{
+        font-size: 28px;
+    }
+}
+
+/* Tablet Devices */
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    .half-width-text .section-title{
+        font-size: 28px;
+    }
+    .half-width img{
+        width: 250px;
+        height: 250px;
+        margin-left: 20px;
+    }
+    .products{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 30px;
+        grid-column-gap: 30px;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    .section-button a{
+        position: relative;
+        left: 100px;
+    }
+    .categories{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        margin-left: 50px;
+    }
+    .category{
+        margin-top: 20px;
+    }
+}
