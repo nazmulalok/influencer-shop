@@ -4,7 +4,7 @@ body{
     margin: 0px;
 }
 section{
-    margin-bottom: 120px;
+    margin-bottom: 100px;
 }
 /* Header Section */
 header{
@@ -132,4 +132,47 @@ header{
     color: rgba(224, 44, 109, 0.87);
     position: relative;
     left: 900px;
+}
+
+/* Categories section styles */
+.categories-section{
+    margin-left: 196px;
+    margin-right: 196px;
+}
+.categories{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.categories-title{
+    font-size: 28px;
+    font-weight: 600;
+    color: #3A3A3A;
+    text-align: center;
+}
+.category{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.category img{
+    width: 70px;
+    height: 70px;
+    padding: 5px;
+    border: 2px solid rgba(224, 44, 109, 0.87);
+    border-radius: 60%;
+    background-color: rgba(128, 128, 128, 0.281);
+}
+.category img:hover{
+    transform: scale(1.2);
+    transition: transform 0.7s ease;
+}
+.category p{
+    margin-top: 3px;
+    margin-left: 5px;
 }
