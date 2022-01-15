@@ -51,6 +51,7 @@ header{
 }
 
 .button-style{
+    display: inline-block;
     text-decoration: none;
     background-color: #E02C6D;
     color: #ffffff;
@@ -59,6 +60,11 @@ header{
     padding: 10px 30px;
 }
 
+.button-style:hover{
+    background-color: black;
+    transform: scale(1.2);
+    transition: transform 0.5s ease-out;
+}
 /* Shop Section */
 .shop-title{
     font-size: 28px;
@@ -175,4 +181,37 @@ header{
 .category p{
     margin-top: 3px;
     margin-left: 5px;
+}
+
+/* Footer Styles */
+footer{
+    background-color: black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+footer h4{
+    font-size: 24px;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 2px;
+}
+footer p{
+    font-size: 14px;
+    font-weight: bold;
+    color: #D9DBE1;
+    text-align: center;
+    margin-bottom: 2px;
+}
+.social-icons{
+    text-align: center;
+    margin-top: 15px;
+}
+.social-icons a{
+   font-size: 15px;
+    margin-right: 16px;
+
+}
+.social-icons .social{
+    font-size: 25px;
 }
